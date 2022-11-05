@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Termário</title>
+</head>
+<body>
+    <script>
+
+        //exemplo prático de aplicação com o operador termário '?:', operadores relacionais e expressoes aritmeticas
+
+        //Definição de variáveis
+        document.write('<p>-------------------------------------------------------------');
+        document.write('<p> DEFINIÇÃO E ATRIBUIÇÃO DE VARIÁVEIS');
+        var num = window.prompt('Digite o número a ser testado: ',);
+
+        //Aplicação do operador termário
+        document.write('<p>-------------------------------------------------------------');
+        document.write('<p>OPERADOR TERNÁRIO <b>(?...:)<b> com OPERADORES RELACIONAIS:');
+        document.write('<p>Número digitado é = a 20? ');
+        ((num==20) ? document.write('<b>SIM<b>') : document.write('<b>NÃO<b>'));
+        document.write('<p>Número digitado é != a 20? ');
+        ((num!=20) ? document.write('<b>SIM<b>') : document.write('<b>NÃO<b>'));
+        document.write('<p>Número digitado é < 50? ');
+        ((num<50) ? document.write('<b>SIM<b>') : document.write('<b>NÃO<b>'));
+        document.write('<p>Número digitado é > 50? ');
+        ((num>50) ? document.write('<b>SIM<b>') : document.write('<b>NÃO<b>'));
+
+                
+    </script>
+</body>
+</html>

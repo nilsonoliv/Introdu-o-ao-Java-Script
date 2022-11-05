@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o toUpperCase()</title>
+</head>
+
+
+<body>
+    <!--Linha de dados via formulário-->
+    <h2>Formulário de consulta de curso</h2>
+    <form name="formcurso" action="" method="post">
+        Digite seu curso: <input type="text" name="f_cursodig" size="8" maxlength="4"> (SIST)
+        <input type="button" name="btn_validar" value="validar" onclick="cadcurso()">
+        <input type="reset" name="btn_cancelar" value="cancelar"> 
+        código do curso:<input type="text" name="f_codcurso" size="15" maxlength="10">   
+    </form>
+    <!--Estrutura Java Script com o método toUpperCase-->
+    <script>
+        //capturar o nome do curso e apresentar o código correspondente
+        var js_cursodig; //horrível esse nome de variavel
+        function cadcurso() {
+            js_cursodig = document.formcurso.f_cursodig.value;
+            if(js_cursodig.toUpperCase()=='SIST'){
+                Document.formcurso.f_codcurso.value = ' SIST001/FB';
+            }
+            else {
+                window.alert('nome inválido');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

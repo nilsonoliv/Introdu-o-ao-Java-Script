@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando confirm()</title>
+</head>
+<body>
+    <script>
+        //pratricando o método confirm() com operador ternario
+        var select;
+        select = window.confirm('Escolha uma das opções!');
+        ((select==true)? document.write('true'):document.write('false'));
+
+        //pode ser usado com qualquer loop
+        if(select==true){
+             document.write('<br>true')
+        }
+        else{
+  
+            document.write('<br>false');
+        }
+
+    </script>
+</body>
+</html>
